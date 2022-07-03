@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World"
         android:layout_gravity="center_horizontal"
+        android:text="Hello World"
         app:layout_constraintBottom_toTopOf="@+id/roll_button"
         app:layout_constraintEnd_toEndOf="@+id/roll_button"
         app:layout_constraintStart_toStartOf="@+id/roll_button" />
+
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/roll_label"
         android:layout_gravity="center_horizontal"
-       />
+        android:text="@string/roll_label" />
 
 
 </LinearLayout>

@@ -1,13 +1,10 @@
 package com.zakaria.kotlinplayground
 
-import android.location.GnssMeasurement
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -191,7 +188,7 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
-    fun ticketPrice(age: Int, isMonday: Boolean): Int {
+    private fun ticketPrice(age: Int, isMonday: Boolean): Int {
         return when (age) {
             in 0..12 -> 15
             in 13..60 -> if (isMonday) 25 else 30
@@ -227,15 +224,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     //6. Internet profile
-    fun maingInternet(){
+    fun maingInternet() {
         val amanda = Person("Amanda", 33, "Play tennis", null)
-        val atiqah = Person("Atiqah", 28 , "climb", amanda);
+        val atiqah = Person("Atiqah", 28, "climb", amanda);
     }
 
 
     //7. Foldable phones
-    fun mainFoldablePhone(){
-       val  newFoldablePhone = FoldablePhone();
+    fun mainFoldablePhone() {
+        val newFoldablePhone = FoldablePhone();
         newFoldablePhone.switchOn()
         newFoldablePhone.checkPhoneScreenLight()
         newFoldablePhone.fold()
@@ -250,8 +247,9 @@ class MainActivity : AppCompatActivity() {
         println("Item A is sold at ${auctionPrice(winningBid, 2000)}.")
         println("Item B is sold at ${auctionPrice(null, 3000)}.")
     }
+
     fun auctionPrice(bid: Bid?, minimumPrice: Int): Int {
-        return bid?.anmmount?: minimumPrice
+        return bid?.anmmount ?: minimumPrice
     }
 
 }

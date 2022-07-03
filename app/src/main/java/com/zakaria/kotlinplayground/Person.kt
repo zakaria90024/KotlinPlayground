@@ -5,18 +5,17 @@ class Person(val name: String, val age: Int, val hobby: String?, val referrer: P
         // Fill in code
         println("Name: $name")
         println("Age: $age")
-        if(hobby != null){
+        if (hobby != null) {
             print("Likes to $hobby. ")
         }
-        if(referrer != null){
+        if (referrer != null) {
             print("Has a refferer named ${referrer.name}")
-            if (referrer.hobby != null){
+            if (referrer.hobby != null) {
                 print(", who likes to ${referrer.hobby}.")
             } else {
                 print(".")
             }
-        }
-        else {
+        } else {
             print("Doesn't have a referrer.")
         }
         print("\n\n")
