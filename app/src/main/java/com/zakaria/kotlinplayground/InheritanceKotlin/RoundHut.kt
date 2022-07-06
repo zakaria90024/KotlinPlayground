@@ -3,7 +3,7 @@ package com.zakaria.kotlinplayground.InheritanceKotlin
 import java.lang.Math.PI
 import java.lang.Math.sqrt
 
-open class RoundHut(residents: Int, val radius: Double) : Dwelling(residents) {
+open class RoundHut(residents: Int, private val radius: Double) : Dwelling(residents) {
     override val capacity: Int
         get() = 4
     override val buildingMeterial: String

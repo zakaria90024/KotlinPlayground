@@ -1,6 +1,6 @@
 package com.zakaria.kotlinplayground.InheritanceKotlin
 
-class SquareCabin(residents: Int, val length: Double) :Dwelling(residents) {
+class SquareCabin(residents: Int, private val length: Double) :Dwelling(residents) {
     override fun floorArea(): Double {
         return length * length
     }

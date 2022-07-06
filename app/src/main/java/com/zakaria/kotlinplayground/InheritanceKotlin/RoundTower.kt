@@ -2,7 +2,7 @@ package com.zakaria.kotlinplayground.InheritanceKotlin
 
 import java.lang.Math.PI
 
-class RoundTower(residents: Int,radius: Double, val floors: Int = 2) : RoundHut(residents, radius) {
+class RoundTower(residents: Int, radius: Double, private val floors: Int = 2) : RoundHut(residents, radius) {
 
     override val buildingMeterial: String
         get() = "Stone"
